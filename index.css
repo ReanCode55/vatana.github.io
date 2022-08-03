@@ -1,0 +1,694 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(resized/19.jpg);
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.mobile-size, .overlay{
+    display: none;
+}
+.fixed{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    opacity: 0.6;
+}
+.download{
+    
+    position: relative;
+    float: right;
+}
+.download a{
+    padding: 20px;
+    background: aqua;
+    position: absolute;
+    bottom: -30px;
+    right: 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.048);
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+input[type=text] {
+    float: right;
+    width: 120px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 10px;
+    transition: width 0.4s ease-in-out;
+  }
+input[type=text]:focus {
+    width: 100%;
+  } 
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.fixed .icon{
+    width: 200px;
+}
+.fixed .icon img{
+    padding: 60px;
+    width: 100%;
+}
+.desc{
+    margin: 20px ;
+}
+.google{
+    cursor: pointer;
+    margin: auto;
+    width: 200px;
+}
+.margin{
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.footer .logo{
+    width: 150px;
+    height: 122px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.footer .logo img{
+    cursor: pointer;
+    width: 100%;
+}
+
+.fixed{
+    width: 100%;
+    position: fixed;
+    background-color:black;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    width: 150px;
+    height: 122px;
+}
+.navbar .logo img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.navbar .navbar-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar .navbar-links ul li{
+    display: inline-block;
+}
+.navbar .navbar-links ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.4s;
+}
+.navbar .navbar-links ul li a:last-child{
+    border-right:1px solid #818181;
+}
+.navbar .navbar-links ul li a:first-child{
+    border-left:1px solid #818181 ;
+}
+.header .navbar .navbar-links ul li a:hover{
+    background-color: #fff;
+    border-radius: 30px;
+    color: black;
+}
+form{
+    width: 300px;
+    position: relative;
+}
+form input{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+form button{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 50px;
+    background: none;
+    cursor: pointer;
+}
+.align{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.banner{
+    width: 60%;
+    display: inline-block;
+    margin: 10px 0;
+}
+.banner .main-box{
+    width: 50%;
+    float: left;
+}
+.banner .main-box .box{
+    width: 100%;
+    padding: 5px;
+}
+.banner .main-box .box .images{
+    width: 100%;
+    height: 410px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.banner .main-box .box .images img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+.banner .main-box .box .images img:hover, 
+.banner .main-box .box-1 .images img:hover {
+    transform: scale(1.1);
+}
+
+.banner .main-box .box-1{
+    width: 100%;
+    padding: 5px;
+}
+.banner .main-box .box-1 .images{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.banner .main-box .box-1 .images img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    border-radius: 10px;
+
+}
+.banner .main-box .box-2,
+.banner .main-box .box-3{
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+.banner .main-box .box-2 .images,
+.banner .main-box .box-3 .images{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.banner .main-box .box-2 .images img,
+.banner .main-box .box-3 .images img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    border-radius: 10px;
+
+}
+.banner .main-box .box-2 .images img:hover,
+.banner .main-box .box-3 .images img:hover{
+    transform: scale(1.1);
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .mobile-size, .overlay{
+        display: block;
+    }
+    
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+    .header{
+        display: none;
+    }
+    .mobile-size{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.116);
+        padding: 5pxm 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile-size i{
+        font-size: 25px;
+        color: white;
+    }
+    .mobile-size .logo{
+        width: 100px;
+        height: 80px;
+    }
+    .mobile-size .logo img{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+        
+    }
+    .banner .main-box{
+        width: 100%;
+        float: none;
+    }
+    .banner .main-box .box{
+        width: 100%;
+        padding: 5px;
+    }
+    .banner .main-box .box .images{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        
+    }
+    .banner .main-box .box .images img{
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+        border-radius: 10px;
+    }
+    .banner .main-box .box .images img:hover, 
+    .banner .main-box .box-1 .images img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .banner .main-box .box-1{
+        width: 100%;
+        padding: 5px;
+    }
+    .banner .main-box .box-1 .images{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px;
+    
+    }
+    .banner .main-box .box-1 .images img{
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+        border-radius: 10px;
+    
+    }
+    .banner .main-box .box-2,
+    .banner .main-box .box-3{
+        width: 50%;
+        float: left;
+        padding: 5px;
+    }
+    .banner .main-box .box-2 .images,
+    .banner .main-box .box-3 .images{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+    
+    }
+    .banner .main-box .box-2 .images img,
+    .banner .main-box .box-3 .images img{
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+        border-radius: 10px;
+    
+    }
+    .banner .main-box .box-2 .images img:hover,
+    .banner .main-box .box-3 .images img:hover{
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    .mobile-size, .overlay{
+        display: block;
+    }
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+    .header{
+        display: none;
+    }
+    .mobile-size{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.116);
+        padding: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile-size i{
+        font-size: 25px;
+        color: white;
+    }
+    .mobile-size .logo{
+        width: 100px;
+        height: 80px;
+    }
+    .mobile-size .logo img{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+    }
+    .banner .main-box{
+        width: 100%;
+        float: none;
+    }
+    .banner .main-box .box{
+        width: 100%;
+        padding: 5px;
+    }
+    .banner .main-box .box .images{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .banner .main-box .box .images img{
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+        border-radius: 10px;
+    }
+    .banner .main-box .box .images img:hover, 
+    .banner .main-box .box-1 .images img:hover {
+        transform: scale(1.1);
+    }
+    
+    .banner .main-box .box-1{
+        width: 100%;
+        padding: 5px;
+    }
+    .banner .main-box .box-1 .images{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px;
+    
+    }
+    .banner .main-box .box-1 .images img{
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+        border-radius: 10px;
+    
+    }
+    .banner .main-box .box-2,
+    .banner .main-box .box-3{
+        width: 50%;
+        float: left;
+        padding: 5px;
+    }
+    .banner .main-box .box-2 .images,
+    .banner .main-box .box-3 .images{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+    
+    }
+    .banner .main-box .box-2 .images img,
+    .banner .main-box .box-3 .images img{
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+        border-radius: 10px;
+    
+    }
+    .banner .main-box .box-2 .images img:hover,
+    .banner .main-box .box-3 .images img:hover{
+        transform: scale(1.1);
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .mobile-size, .overlay{
+        display: block;
+    }
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+    .header{
+        display: none;
+    }
+    .mobile-size{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.116);
+        padding: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile-size i{
+        font-size: 25px;
+        color: white;
+    }
+    .mobile-size .logo{
+        width: 100px;
+        height: 80px;
+    }
+    .mobile-size .logo img{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+        display: inline-block;
+        margin: 10px 0;
+    }
+    .banner .main-box{
+        width: 50%;
+        float: left;
+    }
+    .banner .main-box .box{
+        width: 100%;
+        padding: 5px;
+    }
+    .banner .main-box .box .images{
+        width: 100%;
+        height: 410px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .banner .main-box .box .images img{
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+        border-radius: 10px;
+    }
+    .banner .main-box .box .images img:hover, 
+    .banner .main-box .box-1 .images img:hover {
+        transform: scale(1.1);
+    }
+    
+    .banner .main-box .box-1{
+        width: 100%;
+        padding: 5px;
+    }
+    .banner .main-box .box-1 .images{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px;
+    
+    }
+    .banner .main-box .box-1 .images img{
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+        border-radius: 10px;
+    
+    }
+    .banner .main-box .box-2,
+    .banner .main-box .box-3{
+        width: 50%;
+        float: left;
+        padding: 5px;
+    }
+    .banner .main-box .box-2 .images,
+    .banner .main-box .box-3 .images{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px;
+    
+    }
+    .banner .main-box .box-2 .images img,
+    .banner .main-box .box-3 .images img{
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+        border-radius: 10px;
+    
+    }
+    .banner .main-box .box-2 .images img:hover,
+    .banner .main-box .box-3 .images img:hover{
+        transform: scale(1.1);
+    }
+}
